@@ -25,7 +25,16 @@ local Activators = {
 		["Function"] = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 		end;
-	}
+	};
+	
+	["Bobs"] = {
+		["Name"] = "Bobs";
+		["Function"] = function()
+			local Settings = { Collisions = false, Simulate_Physics_On_LocalPlayer_Only = false, ForceAllRigs = false, Only_Others = false }
+			--ForceAllRigs is basically forcing the changes on all humanoids that it finds
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/htt-py/92db22eeefad0042a6da9117501ad827/raw/BBies.luau", true))(Settings)
+		end;
+	};
 }
 
 -- Generate GUI
