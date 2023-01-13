@@ -1,4 +1,3 @@
-wait(0.35)
 -- Basic Vars
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
@@ -18,6 +17,13 @@ local Activators = {
 		["Name"] = "Infinite Yield";
 		["Function"] = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))();
+		end;
+	};
+	
+	["OwlHub"] = {
+		["Name"] = "Owl Hub Aimbot";
+		["Function"] = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 		end;
 	}
 }
