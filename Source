@@ -14,10 +14,10 @@ local DragStart
 local StartPos
 
 local Activators = {
-	["rere"] = {
-		["Name"] = "rere rere";
+	["InfiniteY"] = {
+		["Name"] = "Infinite Yield";
 		["Function"] = function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))();
 		end;
 	}
 }
@@ -26,7 +26,7 @@ local Activators = {
 local Gui = Instance.new("Frame")
 local ScreenGUI = Instance.new("ScreenGui")
 
-ScreenGUI.Name = "LIBARYHUB"
+ScreenGUI.Name = "LIBRARY"
 
 local function CreateBasicTween(Object,Parameters,TINFO)
 	TINFO =  TINFO or TweenInfo.new(
@@ -105,7 +105,7 @@ local function SetUpGUI()
 	Title.Size = UDim2.new(0.373074144, 0, 0.240000024, 0)
 	Title.ZIndex = 2
 	Title.Font = Enum.Font.GothamBold
-	Title.Text = "LIBARY HUB"
+	Title.Text = "LIBRARY HUB"
 	Title.TextColor3 = Color3.fromRGB(255, 169, 20)
 	Title.TextScaled = true
 	Title.TextSize = 43.000
@@ -155,7 +155,7 @@ local function SetUpGUI()
 	Dragbar.Parent = Gui
 	Dragbar.Active = false
 	Dragbar.BackgroundColor3 = Color3.fromRGB(255, 136, 17)
-	Dragbar.Position = UDim2.new(0.405, 0,0.486, 0)
+	Dragbar.Position = UDim2.new(0.006, 0,0.008, 0)
 	Dragbar.Selectable = false
 	Dragbar.Size = UDim2.new(0.148, 0,0.029, 0)
 	Dragbar.ZIndex = 2
@@ -172,7 +172,7 @@ local function SetUpGUI()
 	Title_3.Size = UDim2.new(0.376569033, 0, 1, 0)
 	Title_3.ZIndex = 3
 	Title_3.Font = Enum.Font.GothamBold
-	Title_3.Text = "LIBARY HUB"
+	Title_3.Text = "LIBRARY HUB"
 	Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title_3.TextScaled = true
 	Title_3.TextSize = 14.000
