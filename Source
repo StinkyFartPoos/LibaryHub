@@ -39,14 +39,14 @@ local Activators = {
 	["RSPY"] = {
 		["Name"] = "RemoteSpy V3";
 		["Function"] = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))();
 		end;
 	};
 	
 	["SSU"] = {
 		["Name"] = "Sirius Sense UI";
 		["Function"] = function()
-			loadstring(game:HttpGet('https://blackballhost.xyz/s/Sirius-Sense-UI.lua'))()
+			loadstring(game:HttpGet('https://blackballhost.xyz/s/Sirius-Sense-UI.lua'))();
 		end;
 	};
 	
