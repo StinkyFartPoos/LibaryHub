@@ -305,7 +305,7 @@ local function SetUpGUI()
 		Button.Parent = List
 	end
 
-	ScreenGUI.Parent = Player.PlayerGui
+	ScreenGUI.Parent = game.CoreGui -- less detectable
 	warn("Done Loading GUI")
 end
 SetUpGUI()
